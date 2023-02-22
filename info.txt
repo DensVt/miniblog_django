@@ -1,0 +1,9 @@
+шаги по созданию
+
+django-admin start_project blog
+
+python manage.py runserver
+
+python manage.py startapp blog
+# регистрация файла в нашем проекте
+# myblog/setting.py -> INSTALLED_APPS -> добавляем из ../blog/apps.py -> copy class name -> 'blog.apps.BlogConfig'
