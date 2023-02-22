@@ -6,7 +6,10 @@
 
 # коментарии под каждой записью, лайки от пользователей
 
-#для запуска необходимо прописать следующие команды в терминале
-#python manage.py makemigrations
-#python manage.py migrate
-#python manage.py createsuperuser
+# для запуска необходимо прописать следующие команды в терминале
+
+# python manage.py makemigrations
+
+# python manage.py migrate
+
+# python manage.py createsuperuser
