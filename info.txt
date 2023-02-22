@@ -1,9 +1,35 @@
 шаги по созданию
 
 django-admin start_project blog
+# setting.py -> TIME_ZONE = 'Europe/Moscow'
 
 python manage.py runserver
 
 python manage.py startapp blog
 # регистрация файла в нашем проекте
 # myblog/setting.py -> INSTALLED_APPS -> добавляем из ../blog/apps.py -> copy class name -> 'blog.apps.BlogConfig'
+
+python manage.py makemigrations
+# создает, но не применяет миграции для всех приложений в моем проекте, проверка кода перед применением
+
+python manage.py migrate
+# позволяет применить созданные миграции к базе данных
+
+python manage.py createsuperuser  
+# создание суперпользователя    -> имя
+                                -> почта (можно пропустить), однако если утерян пароль, то с почтой его можно воставновить
+                                -> pass 
+
+python manage.py runserver
+# переход в админку -> http://127.0.0.1:8000/admin
+
+#создаем модель -> models.py
+                -> поле с заголовком записи
+                -> поле с записью
+                -> имя автора этой записи, дата публикации
+
+
+#импортируем нашу модель в админку и регистрируем ее admin.py
+
+#python manage.py makemigrations 
+#python manage.py migrate
