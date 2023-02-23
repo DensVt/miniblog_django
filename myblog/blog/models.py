@@ -27,7 +27,7 @@ class Comments(models.Model):
         Post, verbose_name='Публикация', on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{sels.name}, {self.post}'
+        return f'{self.name}, {self.post}'
 
     class Meta:
         verbose_name = 'Комментарий'
